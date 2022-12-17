@@ -9,15 +9,18 @@ function App() {
   const [weebs, setWeebs] = useState(0);
   const [requiredHeadpats, setRequiredHeadpats] = useState(10);
 
+  //Code to handle heapat increases
   const increaseHeadpats = ()=>{
     setHeadpats(headpats+1);
     setColor('#' + Math.floor(Math.random()*16777215).toString(16));
   }
 
+  //Code to handle name change
   const handleNameChange = (event) => {
     setName(event.target.value);
   }
 
+  //Code to buy weebs
   const buyWeeb = ()=>{
     setHeadpats(headpats-requiredHeadpats);
     setRequiredHeadpats(Math.floor(requiredHeadpats*1.2));
