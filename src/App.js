@@ -34,6 +34,7 @@ function App() {
 
   return(
     <div className="App">
+      <h1>Headpat Simulator</h1>
       <p><button onClick={()=>{setNameEdit(!showNameEdit)}}>Toggle Name Entry</button></p>
       {showNameEdit && <input type="text"onChange={handleNameChange}/>}
       <h2>{name?name:"Jimmy"}-senpai</h2>
