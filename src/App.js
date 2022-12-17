@@ -43,7 +43,7 @@ function App() {
       <h2>{name?name:"Jimmy"}-senpai</h2>
       <h1 style={{color:color}}>Headpats:{headpats} </h1>
       <p>Weebs: {weebs}</p>
-      <p>Headpats until next week: {Math.max(requiredHeadpats-headpats,0)}</p>
+      <p>Headpats until next weeb: {Math.max(requiredHeadpats-headpats,0)}</p>
       <button onClick={increaseHeadpats}>Pat head</button>
       <button disabled={headpats >= requiredHeadpats ?false:true} onClick={buyWeeb}>Buy Weeb</button>
     </div>);
