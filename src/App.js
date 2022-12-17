@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <p><button onClick={()=>{setNameEdit(!showNameEdit)}}>Toggle Name Entry</button></p>
       {showNameEdit && <input type="text"onChange={handleNameChange}/>}
-      <h2>Senpai {name}</h2>
+      <h2>{name} Senpai</h2>
       <h1 style={{color:color}}>Headpats:{headpats} </h1>
       <button onClick={increaseHeadpats}>Pat head</button>
     </div>);
