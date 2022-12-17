@@ -27,14 +27,17 @@ function App() {
     setWeebs(weebs+1);
   }
 
-  useEffect(() => {
-    const interval = setInterval(() => {
+
+  useEffect(()=>{
+    const intervalId = setInterval(()=>{
       setHeadpats(headpats+weebs);
-      setColor('#' + Math.floor(Math.random()*16777215).toString(16));
-    }, 1000);
-  
-    return () => clearInterval(interval);
-  }, [headpats, weebs]);
+      if(weebs > 0)
+      {
+        setColor('#' + Math.floor(Math.random()*16777215).toString(16));
+      }
+    },1000);    
+    return ()=>clearInterval(intervalId);
+  },[weebs,headpats]);
 
   return(
     <div className="App">
