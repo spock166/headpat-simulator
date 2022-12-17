@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/headpat-simulator/static/css/main.dd37eea1.css",
-    "main.js": "/headpat-simulator/static/js/main.731ea0ed.js",
+    "main.js": "/headpat-simulator/static/js/main.a60462a6.js",
     "index.html": "/headpat-simulator/index.html",
     "main.dd37eea1.css.map": "/headpat-simulator/static/css/main.dd37eea1.css.map",
-    "main.731ea0ed.js.map": "/headpat-simulator/static/js/main.731ea0ed.js.map"
+    "main.a60462a6.js.map": "/headpat-simulator/static/js/main.a60462a6.js.map"
   },
   "entrypoints": [
     "static/css/main.dd37eea1.css",
-    "static/js/main.731ea0ed.js"
+    "static/js/main.a60462a6.js"
   ]
 }
