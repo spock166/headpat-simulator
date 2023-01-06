@@ -22,6 +22,7 @@ function App() {
 
   let warning = weebs>=heads? <div></div> : <div className='warning-div'>Not enough weebs!  There {heads===1?'is':'are'} {heads-weebs} unpatted {heads===1?'head':'heads'} leading to sadness.</div> ;
   
+  let waifuList = ['Saber','Rin','Kurisu','Sakura','Serika','Mayuri','Nami','Senri','Kazuki','Maho'];
 
   //Code to handle heapat increases
   const increaseHeadpats = ()=>{
@@ -102,7 +103,7 @@ function App() {
       {showNameEdit && <input type="text" onChange={handleNameChange}/>}
       <h2>{name?name:"Jimmy"}-senpai</h2>
       <h1 style={{color:color}}>Headpats:{headpats} </h1>
-      <button onClick={increaseHeadpats}>Pat head</button>
+      <button onClick={increaseHeadpats}>Pat {waifuList[Math.floor(Math.random()*waifuList.length)]}'s head</button>
       <div className='store-div'>
         {warning}
         
