@@ -112,8 +112,8 @@ function App() {
       </div>
       <div className='store-div'>
         <p>Cafe Maids: {cafeMaids}</p>
-        <p>A simple maid making her way in life.  1 headpat per pat</p>
         <p>Headpats until next cafe maid: {Math.max(cafeCost-headpats,0)}</p>
+        <p>A simple maid making her way in life.  1 headpat per pat</p>
         <button disabled={headpats >= cafeCost ?false:true} onClick={buyCafeMaid}>Buy Cafe Maid</button>
       </div>
       <div className='store-div'>
