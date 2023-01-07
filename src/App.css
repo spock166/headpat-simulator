@@ -32,6 +32,7 @@
   align-items: center;
   justify-content: center;
   margin: 5px;
+  padding-bottom: 2px;
 }
 
 .store-div{
@@ -43,6 +44,22 @@
   align-items: center;
   justify-content: center;
   margin: 5px;
+  padding-bottom: 2px;
+}
+
+button{
+  background-color: rgb(125, 167, 204);
+  border-radius: 5px;
+  height: 30px;
+}
+
+button:hover{
+  background-color: rgb(96, 127, 155);
+}
+
+button:disabled{
+  background-color: rgb(61, 79, 95);
+  color:black;
 }
 
 .warning-div{
