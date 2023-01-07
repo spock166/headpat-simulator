@@ -1,5 +1,6 @@
 import './App.css';
 import {useEffect, useState} from 'react';
+import maid from './img/maid_1.png';
 
 function App() {
   const [headpats, setHeadpats] = useState(0);
@@ -61,7 +62,7 @@ function App() {
     //Code to buy twin maids
     const buyTwinMaid=()=>{
       setHeadpats(headpats-twinCost);
-      setTwinCost(Math.floor(twinCost*1.15));
+      setTwinCost(Math.floor(twinCost*1.3));
       setTwinMaids(twinMaids+1);
       setHeads(heads+2);
     }
@@ -94,16 +95,23 @@ function App() {
     return ()=>clearInterval(intervalId);
   },[weebs,cafeMaids,catMaids,twinMaids,headpats]);
 
-  
+  const bgStyle ={
+    backgroundImage:`url(${maid})`,
+    backgroundSize: '99.5%',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center top 0%',
+  };
 
   return(
-    <div className="App">
-      <h1>Headpat Simulator</h1>
-      <p><button onClick={()=>{setNameEdit(!showNameEdit)}}>Toggle Name Entry</button></p>
-      {showNameEdit && <input type="text" onChange={handleNameChange}/>}
-      <h2>{name?name:"Jimmy"}-senpai</h2>
-      <h1 style={{color:color}}>Headpats:{headpats} </h1>
-      <button onClick={increaseHeadpats}>Pat {waifuList[Math.floor(Math.random()*waifuList.length)]}'s head</button>
+    <div className="App" style={bgStyle}>
+      <div className='title-div'>
+        <h1>Headpat Simulator</h1>
+        <p><button onClick={()=>{setNameEdit(!showNameEdit)}}>Toggle Name Entry</button></p>
+        {showNameEdit && <input type="text" onChange={handleNameChange}/>}
+        <h2>{name?name:"Jimmy"}-senpai</h2>
+        <h1 style={{color:color}}>Headpats:{headpats} </h1>
+        <button onClick={increaseHeadpats}>Pat {waifuList[Math.floor(Math.random()*waifuList.length)]}'s head</button>
+      </div>
       <div className='store-div'>
         {warning}
         
