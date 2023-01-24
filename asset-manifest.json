@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/headpat-simulator/static/css/main.88115e13.css",
-    "main.js": "/headpat-simulator/static/js/main.5700783f.js",
+    "main.css": "/headpat-simulator/static/css/main.b48ba172.css",
+    "main.js": "/headpat-simulator/static/js/main.a565392f.js",
     "static/media/maid_1.png": "/headpat-simulator/static/media/maid_1.af3caa7f346374f79bda.png",
     "index.html": "/headpat-simulator/index.html",
-    "main.88115e13.css.map": "/headpat-simulator/static/css/main.88115e13.css.map",
-    "main.5700783f.js.map": "/headpat-simulator/static/js/main.5700783f.js.map"
+    "main.b48ba172.css.map": "/headpat-simulator/static/css/main.b48ba172.css.map",
+    "main.a565392f.js.map": "/headpat-simulator/static/js/main.a565392f.js.map"
   },
   "entrypoints": [
-    "static/css/main.88115e13.css",
-    "static/js/main.5700783f.js"
+    "static/css/main.b48ba172.css",
+    "static/js/main.a565392f.js"
   ]
 }
